@@ -12,6 +12,22 @@
 
 -- 													MySQL
 -- 													Задача 2
+CREATE TABLE accounts (
+    acc INT PRIMARY KEY,
+    name VARCHAR(256),
+    email VARCHAR(256),
+    phone VARCHAR(256)
+);
+
+INSERT INTO accounts(acc, name, email, phone) VALUES
+(1, 'Alice', 'alice@example.com', '89151234567'),
+(2, 'Bob', 'bob@example.com', '+79167654321'),
+(3, 'Charlie', 'ch@example.com', '8(985)123-45-67'),
+(4, 'Dylan', 'dylan@example.com', '+79167654321'),
+(5, 'Eve', 'eve@example.com', '+79167654321'),
+(6, 'Frank', 'frank@example.com', '+79851234567'),
+(7, 'Glenda', 'glenda@example.com', '+12124504567');
+
 DROP VIEW IF EXISTS processed_accounts;
 CREATE VIEW processed_accounts AS
 WITH cte AS (
