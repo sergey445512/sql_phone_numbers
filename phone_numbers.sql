@@ -12,6 +12,7 @@
 
 -- 													MySQL
 -- 													Задача 2
+DROP TABLE IF EXISTS accounts;
 CREATE TABLE accounts (
     acc INT PRIMARY KEY,
     name VARCHAR(256),
